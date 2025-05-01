@@ -1,12 +1,15 @@
-import './App.css'
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import IndexRoutes from "./routes/Index";
+// import IndexRoutes from "./routes/IndexRoutes";
+
+const queryClient = new QueryClient();
 
 function App() {
-
   return (
-    <div>
-      <h1 className='font-bold text-red-500 shadow-xl'>hello world</h1>
-    </div>
-  )
+    <QueryClientProvider client={queryClient}>
+      <IndexRoutes />
+    </QueryClientProvider>
+  );
 }
 
-export default App
+export default App;
