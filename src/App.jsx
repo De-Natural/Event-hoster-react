@@ -1,6 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import IndexRoutes from "./routes/Index";
-// import IndexRoutes from "./routes/IndexRoutes";
 
 const queryClient = new QueryClient();
 
