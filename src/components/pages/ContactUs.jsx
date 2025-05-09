@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import ContactItem from "./contactItem";
 import axios from "axios";
 import Socials from "../reuseables/Socials";
 import Button from "../reuseables/Button";
+import ContactItem from "../reuseables/ContactItem";
 function ContactUs() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
