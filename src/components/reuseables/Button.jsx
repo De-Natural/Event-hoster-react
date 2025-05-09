@@ -4,7 +4,7 @@ const Button = ({ children, isLoading = false, disabled, className = "", type = 
     return (
       <button
         disabled={isLoading || disabled}
-        className={`flex justify-center py-2 rounded-sm font-medium bg-black  cursor-pointer text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 ${className}`}
+        className={`flex justify-center py-2 rounded-sm font-medium bg-black  cursor-pointer text-white disabled:opacity-95 disabled:cursor-not-allowed transition-all duration-200 ${className}`}
         {...props}
         type={type}
       >
@@ -19,7 +19,7 @@ const Button = ({ children, isLoading = false, disabled, className = "", type = 
 
 export default Button
 
-// disabled:*: Styles when the button is disabled.
+// disabled: stops the buttons functionality
 // ${className}: Allows users to add extra styles when using the component.
 // children: The content inside the button (like text or an icon).
 // isLoading: A boolean that, if true, shows a loading spinner.
@@ -27,4 +27,5 @@ export default Button
 // type: HTML button type (button, submit, or reset) – defaults to "button".
 // className: Allows additional CSS classes to be passed in.
 // ...props: Collects any extra props (like onClick, id, name) and spreads them on the <button>.
+// disabled={isLoading || disabled} -> The button will be disabled if either isLoading is true or disabled is true.
 

@@ -67,7 +67,7 @@ const Rating = () => {
               <button
                 type="submit"
                 disabled={!review}
-                className="bg-black font-medium text-white w-32 py-2 mt-10 rounded-full cursor-pointer text-sm"
+                className="bg-black font-medium text-white w-[180px] py-2 mt-10 rounded-full cursor-pointer text-sm"
               >
                 SUBMIT
               </button>
@@ -77,7 +77,7 @@ const Rating = () => {
             <label
               htmlFor="image"
               aria-label="Upload image if necessary"
-              className="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center cursor-pointer object-cover"
+              className="w-[200px] h-[200px] rounded-full bg-gray-200 flex items-center justify-center cursor-pointer object-cover"
               style={{
                 backgroundImage: file ? `url(${filePreviewRef.current})` : "none",
               }}

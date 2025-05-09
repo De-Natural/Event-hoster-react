@@ -1,6 +1,6 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
-
+import Button from "../reuseables/Button";
 const Review = () => {
   return (
     <>
@@ -21,19 +21,13 @@ const Review = () => {
                 className=" pt-2 border border-gray-400 w-100 max-w-100 resize-none indent-2 focus:outline-none rounded-md px-2"
               />
               <div className="flex justify-between px-5 mt-4">
-                <button
-                  className="bg-black text-white px-4 py-2 rounded-sm font-semibold cursor-pointer"
-                  type="cancel"
-                >
+                <Button type="button" className="p-4">
                   Cancel
-                </button>
-                <button
-                  className="flex items-center gap-1 bg-black text-white px-4 py-2 rounded-md font-semibold cursor-pointer"
-                  type="submit"
-                >
-                  Send{" "}
-                  <FaPaperPlane className="transition-transform rotate-60" />
-                </button>
+                </Button>
+                <Button type="submit" className="p-4 flex items-center gap-1">
+                  Send
+                  <FaPaperPlane className="transition-transform rotate-60" aria-hidden="true" />
+                </Button>
               </div>
             </div>
           </form>
