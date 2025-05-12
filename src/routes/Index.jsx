@@ -15,6 +15,11 @@ import Landing from "../components/landing/Landing";
 import AboutUs from "../components/pages/AboutUs";
 import UpComingEvent from "../components/pages/UpComingEvent";
 import Testimonials from "../components/pages/Testimonials";
+import SignUp from "../components/auth/signUp";
+import ForgotPassword from "../components/auth/ForgotPassword";
+import Otp from "../components/auth/Otp";
+import ResetPassword from "../components/auth/ResetPassword";
+import Login from "../components/auth/Login";
 
 export const IndexRoutes = () => {
   return (
@@ -31,6 +36,13 @@ export const IndexRoutes = () => {
         <Route path="reviews" element={<Review />} />
         <Route path="rating" element={<Rating />} />
         <Route path="create-event" element={<CreateEvent />} />
+        <Route path="sign-up" element={<SignUp />} />
+        {/* <Route path="login" element={<Login} /> */}
+        <Route path="forgot-password" element={<ForgotPassword />} />
+        <Route path="otp" element={<Otp />} />
+        <Route path="reset-password" element={<ResetPassword />} />
+        <Route path="reset-password" element={<ResetPassword />} />
+        <Route path="login" element={<Login />} />
       </Route>
     </Routes>
   );
