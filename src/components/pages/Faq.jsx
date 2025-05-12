@@ -34,7 +34,7 @@ function Faq() {
 
   return (
     <>
-    <div>
+    <div className="p-[100px]">
       <h2 className="text-4xl text-center mb-2 mt-5 font-bold">
         Frequently Asked Questions
       </h2>

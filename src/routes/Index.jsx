@@ -25,17 +25,16 @@ export const IndexRoutes = () => {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="faqs" element={<Faq />} />
         <Route path="contact-us" element={<ContactUs />} />
-        <Route path="reviews" element={<Review />} />
-        <Route path="rating" element={<Rating />} />
-        <Route path="create-event" element={<CreateEvent />} />
-        <Route path="sign-up" element={<SignUp />} />
-        {/* <Route path="login" element={<Login} /> */}
-        <Route path="forgot-password" element={<ForgotPassword />} />
-        <Route path="otp" element={<Otp />} />
-        <Route path="reset-password" element={<ResetPassword />} />
-        <Route path="reset-password" element={<ResetPassword />} />
-        <Route path="login" element={<Login />} />
       </Route>
+        <Route path="reviews" element={<Review />} />
+        <Route path="sign-up" element={<SignUp />} />
+        <Route path="rating" element={<Rating />} />
+        <Route path="otp" element={<Otp />} />
+        <Route path="create-event" element={<CreateEvent />} />
+        <Route path="forgot-password" element={<ForgotPassword />} />
+        <Route path="login" element={<Login />} />
+        <Route path="reset-password" element={<ResetPassword />} />
+        
     </Routes>
   );
 };
